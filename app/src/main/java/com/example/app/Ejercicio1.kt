@@ -12,6 +12,7 @@ class Ejercicio1 : AppCompatActivity() {
     private val tablero = Array(3) { IntArray(3) }
     private lateinit var mensajeGanador: TextView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio1)
@@ -41,61 +42,71 @@ class Ejercicio1 : AppCompatActivity() {
                 fila = 0
                 columna = 0
             }
+
             R.id.boton2 -> {
                 fila = 0
                 columna = 1
             }
+
             R.id.boton3 -> {
                 fila = 0
                 columna = 2
             }
+
             R.id.boton4 -> {
                 fila = 1
                 columna = 0
             }
+
             R.id.boton5 -> {
                 fila = 1
                 columna = 1
             }
+
             R.id.boton6 -> {
                 fila = 1
                 columna = 2
             }
+
             R.id.boton7 -> {
                 fila = 2
                 columna = 0
             }
+
             R.id.boton8 -> {
                 fila = 2
                 columna = 1
             }
+
             R.id.boton9 -> {
                 fila = 2
                 columna = 2
             }
+
             else -> {
                 return
             }
         }
 
 
-        if (tablero[fila][columna] == 0) {
-            botonPresionado.setBackgroundColor(R.color.verde)
-            tablero[fila][columna] = 1
-            botonPresionado.isEnabled = false
 
-            if (verificarGanador(1)) {
-                mostrarMensaje("¡Ganaste!")
+            if (tablero[fila][columna] == 0) {
+                botonPresionado.setBackgroundColor(R.color.verde)
+                tablero[fila][columna] = 1
+                botonPresionado.isEnabled = false
 
-            } else if (tableroLleno()) {
-                mostrarMensaje("Empate")
+                if (verificarGanador(1)) {
+                    mostrarMensaje("¡Ganaste!")
+                } else if (tableroLleno()) {
+                    mostrarMensaje("Empate")
 
-            } else {
+                } else {
 
-                turnoMaquina()
+                    turnoMaquina()
+                }
+
             }
 
-        }
 
 
     }
@@ -127,8 +138,10 @@ class Ejercicio1 : AppCompatActivity() {
 
             if (verificarGanador(2)) {
                 mostrarMensaje("¡Has perdido pito chico!")
+
             } else if (tableroLleno()) {
                 mostrarMensaje("Empate")
+
             }
         }
     }

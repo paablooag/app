@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio2"
+    >
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/morado"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PM_tema3"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            tools:hint="Ingresar numero:"
+            app:layout_constraintTop_toBottomOf="@id/layout1"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:hint="Ingresar texto:"
+            app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/black"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/editText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="PASAR DATOS"
+            android:textSize="18sp"
+            android:onClick="boton"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
