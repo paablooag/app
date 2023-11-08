@@ -18,7 +18,7 @@ class Ejercicio2 : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.editText)
 
         intent.putExtra("texto", editText.text.toString())
-        intent.putExtra("numero", editText.text.toString())
+        intent.putExtra("numero", editNumber.text.toString())
 
 
         startActivity(intent)

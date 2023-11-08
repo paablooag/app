@@ -20,5 +20,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-
+    fun ejercicio3(view: View) {
+        val intent = Intent(this, Ejercicio3::class.java)
+        startActivity(intent)
+    }
 }
