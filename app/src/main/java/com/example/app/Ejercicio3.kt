@@ -27,7 +27,6 @@ class Ejercicio3 : AppCompatActivity() {
 
         var intent = Intent(this, resultadoEjercicio3::class.java)
         intent.putExtra("texto", textoEnviar)
-
         startActivity(intent)
     }
 
