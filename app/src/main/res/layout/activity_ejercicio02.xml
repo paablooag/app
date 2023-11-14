@@ -101,21 +101,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/text1"
-        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintTop_toBottomOf="@id/card3"
         android:gravity="center"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/text1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBaseline_toBottomOf="parent"
-        android:src="@drawable/zarla_lushop_1x1_2400x2400_20211021_fjq8vrm86pwm7g4fywxt"
-        android:scaleType="center"
         android:layout_marginTop="10dp"
         android:foregroundGravity="center"
-        />
+        android:scaleType="center"
+        android:src="@drawable/zarla_lushop_1x1_2400x2400_20211021_fjq8vrm86pwm7g4fywxt"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
