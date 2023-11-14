@@ -2,8 +2,28 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="azulito">#03A9F4</color>
-    <color name="gris">#4B4B4B</color>
+    <color name="oro">#E7C931</color>
+    <color name="green">#36F43F</color>
     <color name="verde">#4CAF50</color>
-    <color name="morado">#673AB7</color>
+    <color name="verdee">#8BC34A</color>
+    <color name="verdeRick2">#97CE4C</color>
+    <color name="verdeoscuro">#2A662D</color>
+    <color name="marron">#44281D</color>
+    <color name="carne">#E4A788</color>
+    <color name="asulpelo">#B2DAED</color>
+    <color name="carneRick">#D5C8B8</color>
+    <color name="negro">#303032</color>
+    <color name="asulitoepesia">#9FDED5</color>
+    <color name="rojo">#C91D11</color>
+    <color name="amarillo">#DFCD33</color>
+    <color name="azul">#3649F4</color>
+    <color name="plata">#B1A9A9</color>
+    <color name="morao">#885ADA</color>
+    <color name="dorao">#DAC50C</color>
+    <color name="azulcuro">#09103D</color>
+    <color name="oscuro">#C401040C</color>
+    <color name="gray">#555252</color>
+    <color name="rosaclaro">#EC7FFF</color>
+    <color name="rosaaajajaja">#FF9F98</color>
+    <color name="gris">#D5D5D5</color>
 </resources>
